@@ -1,0 +1,39 @@
+{
+  "network": "studionet",
+  "chainId": 61999,
+  "address": "0x2368a42582710f61AF4f29A432990328db32a2ec",
+  "claimId": 1,
+  "hash": "0x3ce022d3e3874f85854c74e307a6acf231892b9563c459916acd4f699ca7be6a",
+  "receiptStatus": 7,
+  "statusName": "FINALIZED",
+  "result": 6,
+  "resultName": "MAJORITY_AGREE",
+  "txExecutionResult": null,
+  "txExecutionResultName": "FINISHED_WITH_RETURN",
+  "consensusResult": "MAJORITY_AGREE",
+  "stderr": "",
+  "before": {
+    "status": "CHALLENGED",
+    "canEvaluate": true,
+    "finalized": false,
+    "verdict": ""
+  },
+  "after": {
+    "status": "FINALIZED",
+    "finalized": true,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "evaluation": {
+      "confidence": "medium",
+      "evaluated_at": "2026-09-12T20:33:43Z",
+      "evaluator_version": "BenchProof-v1.0.1",
+      "evidence_references": "[\"https://github.com/swe-bench/experiments (harness reference)\", \"https://www.swebench.com/ (benchmark results reference)\", \"https://www.swebench.com/ (challenge evidence URI)\"]",
+      "key_findings": "[\"Benchmark and model versions are clearly identified and match the claim.\", \"Evaluation conditions (temperature, retries, prompt parity) are disclosed and appear consistent.\", \"Methodology description is present.\", \"Evidence includes a harness reference and a link to benchmark results, but no raw trajectories or per-task outcome data are provided.\"]",
+      "limitations": "[\"Unable to confirm the exact numbers without inspecting the raw results.\", \"Assessment is limited to the information present in the provided JSON.\"]",
+      "material_issues": "[\"Raw per-task results or trajectories are not included, preventing verification of the reported scores.\", \"Evidence relies on external URLs without embedding the actual data.\", \"A challenger explicitly requests raw trajectories, indicating a reproducibility concern.\"]",
+      "present": true,
+      "summary": "The claim provides benchmark identity, model versions, and disclosed evaluation conditions, but the supplied evidence lacks accessible raw per-task results needed to independently verify the reported percentages.",
+      "verdict": "INSUFFICIENT_EVIDENCE"
+    }
+  },
+  "at": "2026-09-12T20:34:47.087Z"
+}

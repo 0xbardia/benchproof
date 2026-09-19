@@ -1,0 +1,16 @@
+{
+  "source": "https://benchproof.bydx.fun",
+  "viewport": "1440x900",
+  "shots": [
+    { "name": "01-hero", "path": "/", "file": "assets/01-hero.png" },
+    { "name": "02-claims-ledger", "path": "/claims", "file": "assets/02-claims-ledger.png" },
+    { "name": "03-canonical-case", "path": "/claims/onchain-1", "file": "assets/03-canonical-case.png" },
+    { "name": "04-verdict", "path": "/claims/onchain-1#verdict", "file": "assets/04-verdict.png" },
+    { "name": "05-provenance", "path": "/claims/onchain-1#provenance", "file": "assets/05-provenance.png" },
+    { "name": "06-worked-example", "path": "/claims/seed-misleading", "file": "assets/06-worked-example.png" }
+  ],
+  "errors": [],
+  "overflow": { "scrollWidth": 1440, "clientWidth": 1440 },
+  "buildFingerprint": "ada7a37aa877c79c4b228c8897e5b026ed7164445814f411dbd0493600382445",
+  "at": "2026-09-12T22:14:46.794Z"
+}

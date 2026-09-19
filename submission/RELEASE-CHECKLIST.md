@@ -1,0 +1,26 @@
+# RELEASE-CHECKLIST
+
+- [x] Pre-remediation source backup recorded
+- [x] Historical v1.0.0 deployment/evaluation/read evidence preserved
+- [x] Strict evaluator schema and fail-closed parser implemented
+- [x] Structured untrusted-data boundary and adversarial tests added
+- [x] Current v1.0.1 contract deployed to Studionet
+- [x] Current claim lifecycle writes finalized and read back
+- [x] Real evaluation finalized `MAJORITY_AGREE / FINISHED_WITH_RETURN`
+- [x] All 21 public read methods plus invalid-ID checks pass (`38/38`)
+- [x] Application points to current contract and keeps lifecycle transaction provenance
+- [x] Production persistence configured as durable file-backed PGlite for the single PM2 instance
+- [x] Idempotency, same-origin checks, input bounds, rate limits, and safe errors present
+- [x] Background sync replaces render-time synchronization writes
+- [x] Challenge route renders the child route and finalized cases fail closed
+- [x] Case-file sources, provenance, and canonical/preview distinction are explicit
+- [x] Robots/sitemap and low-risk security headers present
+- [x] Production document includes the BenchProof canonical URL
+- [x] Typecheck pass
+- [x] Lint 0 errors
+- [x] Tests pass
+- [x] Production build pass
+- [x] Final production Playwright/Chromium QA and fresh screenshots
+- [ ] Human connects portal wallet + Builder role
+- [ ] Human publishes public GitHub repository and pastes its URL
+- [ ] Human submits the GenLayer portal form

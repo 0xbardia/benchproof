@@ -1,0 +1,7 @@
+{
+  "title": "BenchProof — Prove the benchmark, not just the score.",
+  "site_name": "BenchProof",
+  "description": "BenchProof verifies whether AI benchmark claims are fairly supported by their submitted evidence and methodology using GenLayer.",
+  "card": "custom",
+  "color": "1C1915"
+}

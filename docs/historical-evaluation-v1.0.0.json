@@ -1,0 +1,24 @@
+{
+  "hash": "0x7425a960d184a3ab9e531449b873267f148a3753c811f731a0f8e92f4e4900ae",
+  "receiptStatus": 7,
+  "resultName": "MAJORITY_AGREE",
+  "stderr": "",
+  "after": {
+    "status": "FINALIZED",
+    "finalized": true,
+    "verdict": "INSUFFICIENT_EVIDENCE",
+    "evaluation": {
+      "confidence": "medium",
+      "evaluated_at": "2026-09-12T01:47:45Z",
+      "evaluator_version": "BenchProof-v1.0.0",
+      "evidence_references": "[\"harness: https://github.com/swe-bench/experiments (sha256:demo)\"]",
+      "key_findings": "[\"Benchmark, versions and stated parameters (temp 0, 1 retry, matched prompts) are disclosed\", \"Single evidence item is harness URI only; no raw CSV, per-instance outcomes or logs\", \"Open challenge explicitly requests raw trajectories for reproducibility audit\"]",
+      "limitations": "[\"Evaluation cannot confirm exact numerical match or exclusion policy without artifacts\"]",
+      "material_issues": "[\"Absence of raw results prevents independent verification of reported 72.4 vs 54.6\"]",
+      "present": true,
+      "summary": "Scores and matched-conditions claim are stated but raw results, trajectories or full logs are absent; only harness reference is supplied.",
+      "verdict": "INSUFFICIENT_EVIDENCE"
+    }
+  },
+  "at": "2026-09-12T01:48:58.287Z"
+}

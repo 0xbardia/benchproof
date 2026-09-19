@@ -1,0 +1,59 @@
+# Secrets and local env
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+.node_modules.lock
+
+# Runtime databases
+.data/
+*.sqlite
+*.sqlite3
+*.db
+
+# Build output
+dist/
+build/
+.vercel/
+.output/
+.tanstack/
+
+# Coverage and caches
+coverage/
+.cache/
+tmp/
+.temp/
+
+# Logs
+*.log
+logs/
+
+# Tests / browser
+playwright-report/
+test-results/
+.playwright-cli/
+screenshots/
+
+# Keys and certs
+*.pem
+*.key
+
+# Backups
+*.tar.gz
+*.tgz
+backups/
+
+# Platform / local scratch
+.grok/
+artifacts/
+.project_id
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+attachments/

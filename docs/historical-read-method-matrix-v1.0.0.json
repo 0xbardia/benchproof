@@ -1,0 +1,281 @@
+{
+  "address": "0x0E6A637e78241D5005245281Bc92d7C3aA09e197",
+  "passed": 22,
+  "failed": 0,
+  "matrix": [
+    {
+      "method": "get_claim_count",
+      "inputs": [],
+      "expected": ">=0",
+      "actual": 1,
+      "result": "PASS"
+    },
+    {
+      "method": "get_contract_version",
+      "inputs": [],
+      "expected": "BenchProof-v1.0.0",
+      "actual": "BenchProof-v1.0.0",
+      "result": "PASS"
+    },
+    {
+      "method": "get_deployer",
+      "inputs": [],
+      "expected": "0x address",
+      "actual": "0x7902946711393eA6D074174c5072e8B4f96a04c5",
+      "result": "PASS"
+    },
+    {
+      "method": "get_limits",
+      "inputs": [],
+      "expected": "object with max_title",
+      "actual": {
+        "max_challenges": 16,
+        "max_evidence": 12,
+        "max_hash": 128,
+        "max_methodology": 4000,
+        "max_note": 1000,
+        "max_statement": 2000,
+        "max_title": 200,
+        "max_uri": 512
+      },
+      "result": "PASS"
+    },
+    {
+      "method": "get_challenge_categories",
+      "inputs": [],
+      "expected": "includes misleading_headline",
+      "actual": [
+        "outdated_baseline",
+        "benchmark_version_mismatch",
+        "dataset_cherry_picking",
+        "unequal_prompts",
+        "unequal_system_prompts",
+        "unequal_retry_count",
+        "unequal_tool_access",
+        "inference_configuration_mismatch",
+        "excluded_failed_runs",
+        "metric_manipulation",
+        "contamination_leakage",
+        "insufficient_sample_size",
+        "unsupported_generalization",
+        "misleading_headline",
+        "reproducibility_problem",
+        "undisclosed_methodology_difference",
+        "prompt_injection_in_evidence",
+        "other"
+      ],
+      "result": "PASS"
+    },
+    {
+      "method": "get_verdict_types",
+      "inputs": [],
+      "expected": "includes SUPPORTED",
+      "actual": [
+        "SUPPORTED",
+        "PARTIALLY_SUPPORTED",
+        "INSUFFICIENT_EVIDENCE",
+        "MISLEADING",
+        "INVALID"
+      ],
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim",
+      "inputs": [
+        999999
+      ],
+      "expected": "error",
+      "actual": "threw",
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": {
+        "benchmark": "SWE-bench Verified",
+        "benchmark_version": "verified-500-2025-03-15",
+        "challenge_count": 1,
+        "claimant": "0x427cd9730F79901A3A30cb89cCC2D6B9480DF076",
+        "conditions_json": "{\"retriesA\":\"1\",\"retriesB\":\"1\",\"promptParity\":\"matched\"}",
+        "created_at": "2026-09-12T01:30:55Z",
+        "evaluation_date": "2026-03-02",
+        "evidence_count": 1,
+        "finalized": true,
+        "id": 1,
+        "methodology": "Identical OpenHands harness, temperature 0, retries 1, matched prompts, failed runs unresolved.",
+        "metric": "resolved %",
+        "model_a": "Claude Opus 4.1",
+        "model_a_version": "2026-02-19",
+        "model_b": "GPT-4.1",
+        "model_b_version": "gpt-4.1-2025-04-14",
+        "published_at": "2026-09-12T01:32:07Z",
+        "reported_result": "72.4 vs 54.6",
+        "source_urls": "https://www.swebench.com/",
+        "statement": "Opus 4.1 scores 72.4 vs 54.6 for GPT-4.1 under identical harness, temperature 0, one retry.",
+        "status": 4,
+        "status_name": "FINALIZED",
+        "title": "Matched SWE-bench Verified"
+      },
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim_status",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": 4,
+      "result": "PASS"
+    },
+    {
+      "method": "get_status_name",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": "FINALIZED",
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim_verdict",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": "INSUFFICIENT_EVIDENCE",
+      "result": "PASS"
+    },
+    {
+      "method": "get_claimant",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": "0x427cd9730F79901A3A30cb89cCC2D6B9480DF076",
+      "result": "PASS"
+    },
+    {
+      "method": "get_evidence_count",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": 1,
+      "result": "PASS"
+    },
+    {
+      "method": "get_challenge_count",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": 1,
+      "result": "PASS"
+    },
+    {
+      "method": "get_evaluation",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": {
+        "confidence": "medium",
+        "evaluated_at": "2026-09-12T01:47:45Z",
+        "evaluator_version": "BenchProof-v1.0.0",
+        "evidence_references": "[\"harness: https://github.com/swe-bench/experiments (sha256:demo)\"]",
+        "key_findings": "[\"Benchmark, versions and stated parameters (temp 0, 1 retry, matched prompts) are disclosed\", \"Single evidence item is harness URI only; no raw CSV, per-instance outcomes or logs\", \"Open challenge explicitly requests raw trajectories for reproducibility audit\"]",
+        "limitations": "[\"Evaluation cannot confirm exact numerical match or exclusion policy without artifacts\"]",
+        "material_issues": "[\"Absence of raw results prevents independent verification of reported 72.4 vs 54.6\"]",
+        "present": true,
+        "summary": "Scores and matched-conditions claim are stated but raw results, trajectories or full logs are absent; only harness reference is supplied.",
+        "verdict": "INSUFFICIENT_EVIDENCE"
+      },
+      "result": "PASS"
+    },
+    {
+      "method": "is_finalized",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": true,
+      "result": "PASS"
+    },
+    {
+      "method": "can_challenge",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": false,
+      "result": "PASS"
+    },
+    {
+      "method": "can_evaluate",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": false,
+      "result": "PASS"
+    },
+    {
+      "method": "can_add_evidence",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": false,
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim_core_hash_material",
+      "inputs": [
+        1
+      ],
+      "expected": "returns",
+      "actual": "Matched SWE-bench Verified\nOpus 4.1 scores 72.4 vs 54.6 for GPT-4.1 under identical harness, temperature 0, one retry.\nClaude Opus 4.1\n2026-02-19\nGPT-4.1\ngpt-4.1-2025-04-14\nSWE-bench Verified\nverified-500-2025-03-15\n2026-03-02\nresolved %\n72.4 vs 54.6\nIdentical OpenHands harness, temperature 0, retries 1, matched prompts, failed runs unresolved.\nhttps://www.swebench.com/\n{\"retriesA\":\"1\",\"retriesB\":\"1\",\"promptParity\":\"matched\"}",
+      "result": "PASS"
+    },
+    {
+      "method": "get_claim_evidence",
+      "inputs": [
+        1,
+        0
+      ],
+      "expected": "returns",
+      "actual": {
+        "added_at": "2026-09-12T01:31:33Z",
+        "content_hash": "sha256:demo",
+        "id": 0,
+        "kind": "harness",
+        "note": "OpenHands harness used for both models.",
+        "uri": "https://github.com/swe-bench/experiments"
+      },
+      "result": "PASS"
+    },
+    {
+      "method": "get_challenge",
+      "inputs": [
+        1,
+        0
+      ],
+      "expected": "returns",
+      "actual": {
+        "category": "reproducibility_problem",
+        "challenger": "0x6a5e0671B32b612B73CeF368DADD2780eE5B4D69",
+        "created_at": "2026-09-12T01:32:40Z",
+        "evidence_hash": "sha256:challenge",
+        "evidence_uri": "https://www.swebench.com/",
+        "explanation": "The claim is otherwise matched; requesting the raw CSV for independent audit.",
+        "id": 0,
+        "reason": "Need raw trajectories"
+      },
+      "result": "PASS"
+    }
+  ],
+  "at": "2026-09-12T02:09:59.586Z"
+}

@@ -1,0 +1,18 @@
+{
+  "version": "BenchProof-v1.0.1",
+  "network": "studionet",
+  "chainId": 61999,
+  "rpc": "https://studio.genlayer.com/api",
+  "deploymentTx": "0xd2b875600a60ef8bff48488441a4e9183940adde5cb6de46e5b5df02637669fa",
+  "contractAddress": "0x2368a42582710f61AF4f29A432990328db32a2ec",
+  "receiptStatus": 7,
+  "receiptStatusName": "FINALIZED",
+  "txExecutionResult": null,
+  "txExecutionResultName": null,
+  "result": 6,
+  "resultName": "MAJORITY_AGREE",
+  "deployer": "0x54e59A388861F5E7f29b75d7cf1D33Cf4fDF0967",
+  "sourceFingerprint": "ec09686724ad2b2a1d1f8784eb9d6787a949be1bf55e1aaae2cec3bf02c5dfa9",
+  "previousContract": "0x0E6A637e78241D5005245281Bc92d7C3aA09e197",
+  "at": "2026-09-12T20:27:36.155Z"
+}
