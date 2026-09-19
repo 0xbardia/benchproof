@@ -135,7 +135,7 @@ npm run lint
 npm run build
 ```
 
-Current source gates: **198 script tests + 79 TypeScript tests pass (277 total)**, typecheck passes, lint has zero errors, and the production build passes. Coverage includes strict evaluator parsing, adversarial output, prompt injection, state transitions, SSRF guards, hash parity, and contract-read verification scripts.
+Current source gates: **198 script tests + 82 TypeScript tests pass (280 total)**, typecheck passes, lint has zero errors, and the production build passes. Coverage includes strict evaluator parsing, adversarial output, prompt injection, state transitions, SSRF guards, hash parity, and contract-read verification scripts.
 
 ## Security posture
 
